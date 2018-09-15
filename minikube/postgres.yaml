@@ -3,8 +3,9 @@ kind: Service
 metadata:
   name: postgres
 spec:
+  type: NodePort
   ports:
-  - name: pgql
+  - name: postgres
     port: 5432
     targetPort: 5432
     protocol: TCP
